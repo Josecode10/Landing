@@ -5,16 +5,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color: #9AA6B2;
+}
+
 body {
-  background-color: #FFEDF3;
+  background-color: #FFF;
   color: #000;
+  text-align: center;
 }
 
 header {
   height: 50px;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin: 10px auto 0px;
 }
 
 header div {
@@ -22,38 +26,115 @@ header div {
   display: inline-block;
 }
 
+
 header div div {
   height: 30px;
   width: auto;
   display: inline-block;
   line-height: 30px;
-  vertical-align: top;
+}
+
+header .right div {
+  padding-left: 10px;
   
 }
 
 .right {
   position: absolute;
-  right: 0;
+  right: 5px;
 }
 
 .left {
-  position: relative;
+  position: absolute;
+  left: 5px;
   font-weight: bold;
 }
 
-.image {
+.image_encabezado {
   top: 4px;
   left: 3px;
 }
 
 header div a {
   text-decoration: none;
-  color: #000;
-  color: #9AA6B2;
+  color: var(--color)
 }
 
 header div img {
-  object-fit: contain;
   width: 60%;
   height: 60%;
+  object-fit: contain;
+}
+
+header div div button {
+  background-color: #81BFDA;
+  border: none;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.cuerpo {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.texto, 
+.imagen_cuerpo {
+  width: 400px;
+  height: 400px;
+}
+
+p {
+  color: var(--color)
+}
+
+.texto {
+  text-align: left;
+  padding: 100px 10px;
+  
+}
+
+.cuerpo img {
+  margin-top: 20px;
+  width: 380px;
+  object-fit: contain;
+}
+
+div h2,
+div p {
+  margin-bottom: 30px;
+}
+
+.texto button {
+  background-color: #81BFDA;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+
+  body {
+    
+  }
+
+  header {
+    height: 50px;
+    width: 100%;
+    margin: 20px auto 50px;
+  }
+
+ .texto, 
+ .imagen_cuerpo {
+    display: inline-block;
+    vertical-align: top;
+  }
+
 }
