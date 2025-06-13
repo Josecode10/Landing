@@ -1,74 +1,59 @@
+/* Ajustar valores por defecto del navegador */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.logo1 {
-  /* float: left; */
-  font-weight: bold;
-  margin-left: 1rem;
+body {
+  background-color: #FFEDF3;
+  color: #000;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+header div {
+  position: relative;
+  display: inline-block;
+}
+
+header div div {
+  height: 30px;
+  width: auto;
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: top;
   
 }
 
-.logo1 img {
-  height: 15px;
-  width: 15px;
-  margin-top: 50px;
+.right {
+  position: absolute;
+  right: 0;
 }
 
-.menu {
-  float: right;
-  margin-right: 1rem;
+.left {
+  position: relative;
+  font-weight: bold;
 }
 
-.menu button {
-  background-color: rgb(153, 204, 255);
-  color: white;
-  height: 40px;
-  width: 80px;
-  border-radius: 12px;
-  border: none;
+.image {
+  top: 4px;
+  left: 3px;
 }
 
-p {
-  color: rgb(160, 160, 160);
-
-}
-
-.menu a {
+header div a {
   text-decoration: none;
-  color: rgb(160, 160, 160);
-  font-weight: bold ;
+  color: #000;
+  color: #9AA6B2;
 }
 
-.texto {
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-}
-
-.texto button {
-  background-color: rgb(153, 204, 255);
-  color: white;
-  height: 40px;
-  width: 100px;
-  border-radius: 12px;
-  border: none;
-  display: inline-block;
-}
-
-.imagen {
-  text-align: center;
-  display: inline-block;
-  width: 35%;
-  height: 0;
-  margin-top: 100px;
-}
-
-.imagen img {
+header div img {
   object-fit: contain;
-  height: 300px;
-  width: 300px;
+  width: 60%;
+  height: 60%;
 }
-
