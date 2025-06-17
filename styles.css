@@ -119,11 +119,8 @@ div p {
   font-weight: bold;
 }
 
-@media (min-width: 800px) {
 
-  body {
-    
-  }
+@media (min-width: 800px) {
 
   header {
     height: 50px;
