@@ -1,4 +1,5 @@
 /* Ajustar valores por defecto del navegador */
+/* No se aplica media queries para pantallas de 800px o menos  */
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +120,7 @@ div p {
   font-weight: bold;
 }
 
-
+/* A partir de este punto los estilos aplicarán para pantallas de un ancho superior a 800px */
 @media (min-width: 800px) {
 
   header {
